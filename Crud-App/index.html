@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="design.css">
+    <script src="item.js"></script>
+    <script src="itemOperations.js"></script>
+    <script src="controller.js"></script>
+</head>
+<body>
+    <div class = "alert alert-primary myhead" role="alert">            
+        <b>CRUD APP</b>
+    </div>
+    <label for="exampleEmailInput">Product ID</label>
+    <input type="text" class="form-control" id="id" placeholder="Product ID">
+    <label for="exampleEmailInput">Product Name</label>
+    <input type="text" class="form-control" id="name" placeholder="Product name">
+    <label for="customrange">Product Price</label>
+    <input type="range" class="form-control" id="price" >
+    <label for="exampleEmailInput">Product Description</label>
+    <textarea class="form-control"
+    id="desc" rows="3"></textarea>
+    <label for="exampleEmailInput">Colour</label>
+    <input type="color" class="form-control" id="color" >
+    <label for="exampleEmailInput">Email</label>
+    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+    <button class="btn btn-primary" id="add">ADD</button>
+    <button class="btn btn-primary" id="delete">DELETE</button>
+    <div>
+        <table class="table table-bordered" id="items">
+            <thead class="thead-dark">
+                <th>Product ID</th>
+                <th>Price</th>
+                <th>Product Description</th>
+                <th>Color</th>
+                <th>E-mail</th>
+                <th>Operation</th> 
+            </thead>
+            <tbody id = 'items'></tbody>
+        </table>
+    </div>
+</body>
+</html>
