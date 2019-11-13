@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function doAjax(){
+            var txt = document.querySelector('#txt').value;
+            const url = 'https://api.giphy.com/v1/gifs/search?q=$(txt)&api_key=p04BhcFUwCMiV9cZafQYKQjx9GVomw3N&q=&limit=25&offset=0&rating=G&lang=en'
+        }
+    </script>
+</head>
+<body>
+    <input id='txt' type="text" placeholder="Type to search Image">
+    <button onclick="doAjax()">Search</button>
+    <fieldset>
+        <legend>Output</legend>
+        <div id='iamgediv'></div>
+        </div>
+    </fieldset>
+</body>
+</html>
