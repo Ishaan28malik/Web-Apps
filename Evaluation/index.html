@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="all.css">
+    <script src="Evalitme.js"></script>
+    <script src="Evaloprt.js"></script>
+    <script src="Evalcont.js"></script>
+</head>
+<body>
+    <div class = "alert alert-primary myhead" role="alert">            
+        <b>CGPA</b>
+    </div>
+    <label for="exampleRollno">Student Rollno</label>
+    <input type="text" class="form-control" id="Rollno" placeholder="Rollno">
+    <label for="exampleName">Student Name</label>
+    <input type="text" class="form-control" id="name" placeholder="Name">
+    <label for="customrange">CGPA</label>
+    <input type="email" class="form-control" id="cgpa" pattern="[]{} placeholder="CGPA">
+    <label for="exampledateofbirth">DOB</label>
+    <input type="" class="form-control" id="DOB" placeholder="Date of Birth">
+    <button class="btn btn-primary" id="add">ADD</button>
+    <div>
+        <table class="table table-bordered" id="items">
+            <thead class="thead-dark">
+                <th>Student Rollno</th>
+                <th>Student Name</th>
+                <th>CGPA</th>
+                <th>DOB</th>
+
+            </thead>
+            <tbody id = "items"></tbody>
+        </table>
+    </div>
+</body>
+</html>
