@@ -10,19 +10,7 @@ import Message from './components/Message';
 function App() {
   return (
     <div className="App">
-    {/*
-      <New name="Ishaan"/>
-    <New name="Malik"/>
-    <button >Click</button>
-    <New name="Tyroo"/>
-    <New name="Gurgaon"/>
-
-    <Welcome name="Intern"/>
-    <Welcome name="Freshy"/>
-    <Welcome newname="Front-end dev"/>
-    <Jsxx />
-    <Jsxw />
-    */}
+    
     <Message />
     </div>
   );
